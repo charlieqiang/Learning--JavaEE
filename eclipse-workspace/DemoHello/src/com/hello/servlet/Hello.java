@@ -1,4 +1,4 @@
-package com.charlie.servlet;
+package com.hello.servlet;
 
 import java.io.IOException;
 import javax.servlet.ServletException;
@@ -7,17 +7,19 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.hello.model.SendEmailThread;
+
 /**
- * Servlet implementation class Demo01
+ * Servlet implementation class Hello
  */
-@WebServlet("/Demo01")
-public class Demo01 extends HttpServlet {
+@WebServlet("/Hello")
+public class Hello extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public Demo01() {
+    public Hello() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -36,6 +38,14 @@ public class Demo01 extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		doGet(request, response);
+	}
+	
+	@Override
+	public void init() throws ServletException {
+		// TODO Auto-generated method stub
+		SendEmailThread setr=new SendEmailThread();
+		setr.start();
+	
 	}
 
 }
