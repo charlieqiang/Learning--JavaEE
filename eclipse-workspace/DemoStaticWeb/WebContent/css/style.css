@@ -1,0 +1,110 @@
+@charset "UTF-8";
+body {
+	width:950px;
+	height:800px;
+	margin:0 auto;
+	border:1px solid red;
+	font-size: 12px;
+}
+
+.top{
+	width:950px;
+	height:22px;
+	border:1px solid pink;
+}
+
+.top .login{
+	width:416px;
+	height:20px;
+	float: left;
+	border:1px solid green;
+}
+
+.top .indexpage{
+	width: 105px;
+	height: 20px;
+	border:1px solid gray;
+	float: left;
+	margin-left: 50px;
+}
+
+.top .myhref{
+	width: 200px;
+	height: 20px;
+	float: right;
+	border:1px solid black;
+}
+
+.mid .logo{
+	width: 137px;
+	height: 68px;
+	background-color: orange;
+	float: left;
+	margin-top: 5px;
+}
+
+.mid .logo img{
+	width: 137px;
+	height: 68px;
+}
+
+
+.mid .nav{
+	width: 807px;
+	height: 68px;
+	float: right;
+	margin-left: 5px;
+	margin-top: 5px;
+	background-color: blue;
+}
+
+.mid .ad{
+	width: 950px;
+	height: 212px;
+	border:1px solid silver;
+	margin-top: 5px;
+	float: left;
+}
+
+.mid .ad .stuad{
+	width: 126px;
+	height: 196px;
+	background-color: pink;
+	float: left;
+	margin: 5px 0 0 4px;
+	
+}
+
+.mid .ad .ad2{
+	width: 452px;
+	height: 196px;
+	background-color: yellow;
+	float: left;
+	margin: 5px 0 0 12px;
+	
+}
+
+.mid .ad .housead{
+	width: 150px;
+	height: 196px;
+	background-color: green;
+	float: left;
+	margin: 5px 0 0 12px;
+	
+}
+
+.mid .ad .imgad{
+	width: 179px;
+	height: 212px;
+	/*background-color: orange;*/
+	border-left:1px solid silver;
+	float: right;
+	margin: 0px 0 0 14px;
+	text-align: center;/*左右居中*/
+}
+
+.mid .ad .imgad img{
+	width: 170px;
+	height: 200px;
+
+}
